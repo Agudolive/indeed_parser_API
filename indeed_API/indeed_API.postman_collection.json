@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "4b53ddbf-ebad-4bfd-a6de-fb6130029219",
+		"name": "indeed_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "job offers in Paris",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/job_offers/?location=Marseille",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"job_offers",
+						""
+					],
+					"query": [
+						{
+							"key": "location",
+							"value": "Marseille"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "job offers in remote",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/job_offers/?remote=True",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"job_offers",
+						""
+					],
+					"query": [
+						{
+							"key": "remote",
+							"value": "True"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "job offers in \"Bouches du Rhone\" (department 13)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/job_offers/?department=13",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"job_offers",
+						""
+					],
+					"query": [
+						{
+							"key": "department",
+							"value": "13"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "job offers in Paris, urgently hiring and with company rating > 4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/job_offers?location=Paris&urgently_hiring=True&min_rating=4",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"job_offers"
+					],
+					"query": [
+						{
+							"key": "location",
+							"value": "Paris"
+						},
+						{
+							"key": "urgently_hiring",
+							"value": "True"
+						},
+						{
+							"key": "min_rating",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
